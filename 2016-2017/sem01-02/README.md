@@ -30,3 +30,7 @@
 
 [пример](07defpar.cpp)
 
+Константа `nullptr` типа `nullptr_t`.
+
+[пример](08nullptr.cpp)
+
