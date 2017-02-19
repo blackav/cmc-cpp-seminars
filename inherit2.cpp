@@ -2,15 +2,15 @@
 
 using namespace std;
 
-class A 
+class A
 {
 public:
-    virtual ~A() {}
+    virtual ~A() { h();  }
     void f(int a) { cout << "A::f(int)\n"; }
     void f(double a) { cout << "A::f(double)\n"; }
     virtual void g(int a, int b = 10) { cout << "A::g(" << a << "," << b << ")\n"; }
-    virtual void h() { cout << "A::h(double)" << endl; }
-    virtual void k() ;
+    virtual void h() { cout << "A::h()" << endl; }
+    virtual void k() = 0 ;
     void k()const {}
 };
 
@@ -25,7 +25,7 @@ public:
     using A::f;
     void f(char a) { cout << "B::f(char)\n"; }
     void g(int a, int b = 20) { cout << "B::g(" << a << "," << b << ")\n"; }
-    void h() { cout << "B::h()" << endl; }
+    void h() override { cout << "B::h()" << endl; }
     void k() { cout << "B::k()" << endl; }
 };
 
@@ -33,7 +33,7 @@ int main()
 {
     B b;
     A &a = b;
-    B *c = &b;
+    A *c = &b;
 
     b.g(1);
     a.g(2);
