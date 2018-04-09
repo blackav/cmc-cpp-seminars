@@ -98,6 +98,10 @@ int main()
     // unique ptr works with arrays
     {
         auto upa = unique_ptr<B[]>(new B[3]{100, 200, 300});
+        // operator[] is defined for array access
+        cout << upa[1].f << endl;
+        upa[2].f += 20;
+        cout << upa[2].f << endl;
     }
     cout << "after array" << endl;
 }
