@@ -7,6 +7,7 @@
 * [Семинары 1, 2](sem01)
 * [Семинар 3](sem03)
 * [Семинар 4](sem04)
+* [Семинар 5](sem05)
 
 ## О компиляторах
 
@@ -33,7 +34,7 @@ https://www.youtube.com/playlist?list=PLckDP3jNUDU7ojdlRAH1OYEo-mwP1xn4F
 https://github.com/isocpp/CppCoreGuidelines
 
 Черновик стандарта C++:
-http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf
+https://eel.is/c++draft/
 
 Слайды лекций и дополнительная информация:
 https://cmcmsu.info/2course/
