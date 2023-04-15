@@ -19,7 +19,7 @@ int main()
         if (auto r = f(x); r) {
             cout << "result " << *r << endl;
         } else {
-            cout << "error" << r.error() << endl;
+            cout << "error: " << r.error() << endl;
         }
     }
 }
