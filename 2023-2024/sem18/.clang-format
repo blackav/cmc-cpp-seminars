@@ -1,0 +1,33 @@
+LineEnding: LF
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 120
+UseTab: Never
+SortIncludes: Never
+SpaceAfterCStyleCast: true
+IndentCaseLabels: false
+InsertBraces: true
+InsertNewlineAtEOF: true
+IndentGotoLabels: false
+AlwaysBreakAfterReturnType: AllDefinitions
+AllowShortEnumsOnASingleLine: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel:  false
+  AfterClass:      true
+  AfterControlStatement: Never
+  AfterEnum:       true
+  AfterExternBlock: false
+  AfterFunction:   true
+  AfterNamespace:  true
+  AfterObjCDeclaration: false
+  AfterStruct:     true
+  AfterUnion:      true
+  BeforeCatch:     false
+  BeforeElse:      false
+  BeforeLambdaBody: false
+  BeforeWhile:     false
+  IndentBraces:    false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
